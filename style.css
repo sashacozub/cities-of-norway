@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;400&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,28 +9,16 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
   min-height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   list-style: none;
   text-transform: capitalize;
@@ -57,8 +44,7 @@ a {
   position: absolute;
   top: 25%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 400px;
   height: 40px;
   z-index: 2;
@@ -73,7 +59,6 @@ a {
   font-weight: 100;
   outline: none;
   border: 2px solid #dbdbdb;
-  -webkit-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
 }
 
@@ -86,25 +71,17 @@ a {
 }
 
 .results li {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
 .results li:nth-child(odd) {
   height: 40px;
   border: 1px solid gray;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d4d4d4));
   background: linear-gradient(to bottom, white 0%, #d4d4d4 100%);
-  -webkit-transform: perspective(100px) rotateX(2deg) translateY(0px);
-          transform: perspective(100px) rotateX(2deg) translateY(0px);
+  transform: perspective(100px) rotateX(2deg) translateY(0px);
 }
 
 .results li:nth-child(odd):hover {
@@ -114,10 +91,8 @@ a {
 .results li:nth-child(even) {
   height: 40px;
   border: 1px solid gray;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c3c5d3), to(white));
   background: linear-gradient(to bottom, #c3c5d3 0%, white 100%);
-  -webkit-transform: perspective(100px) rotateX(-2deg) translateY(0px);
-          transform: perspective(100px) rotateX(-2deg) translateY(0px);
+  transform: perspective(100px) rotateX(-2deg) translateY(0px);
 }
 
 .results li:nth-child(even):hover {
@@ -132,14 +107,11 @@ a {
   position: absolute;
   top: 19%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 300px;
   margin: auto;
   background-color: rgba(255, 255, 255, 0.85);
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
-  -webkit-transition: all 300ms ease-in;
+  backdrop-filter: blur(3px);
   transition: all 300ms ease-in;
 }
 
@@ -147,33 +119,23 @@ a {
   position: absolute;
   top: 50%;
   right: 5%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-weight: 100;
 }
 
 .download {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 10px 20px;
   position: absolute;
   bottom: 5%;
   left: 50%;
-  -webkit-transform: translateX(-50%) scale(1);
-          transform: translateX(-50%) scale(1);
+  transform: translateX(-50%) scale(1);
   background-color: rgba(255, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   cursor: pointer;
-  -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   z-index: 0;
 }
@@ -183,8 +145,7 @@ a {
 }
 
 .download:hover {
-  -webkit-transform: translateX(-50%) scale(1.1);
-          transform: translateX(-50%) scale(1.1);
+  transform: translateX(-50%) scale(1.1);
 }
 
 @media screen and (max-width: 580px) {
